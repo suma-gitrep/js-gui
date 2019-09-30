@@ -1,4 +1,4 @@
-const avg = (x, y) => { 
+const people = (x, y) => { 
   
   
   return x*y }
@@ -21,9 +21,9 @@ const updateWithAdd = async (event) => {
     const s = document.querySelector('#guest').value.replace(regex, '')
     const i = parseInt(document.querySelector('#itemsPerBag').value)
     const j = parseInt(document.querySelector('#bags').value)
-    const final= avg(i,j);
+    const final= people(i,j);
     
-    const ans = `${s}, your total number of items is  . ${final}`
+    const ans = `${s}, your total number of items is = ${final}`
 
     document.querySelector('#result').innerHTML = ans
   }

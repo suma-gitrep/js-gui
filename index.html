@@ -9,6 +9,9 @@
 
   <meta name="description" content="Given peoplePerCar and number of cars, display the total number of people">
   <meta name="author" content="suma soma">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
@@ -30,18 +33,38 @@
 </head>
 
 <body class="d-flex flex-column sticky-footer-wrapper">
+    <header>
+
+        <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand" href="index.html">Grocery Estimator</a>
+          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
   <!-- Bootstrap container or container-fluid (whole width) -->
   <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
   <!-- margin top 5 ($spacer * 3) -->
   <main class="container mt-5 flex-fill">
-
+      <h2>Given items per bag and number of bags, calculate total number of items</h2>
     <!--Container has rows - first row -->
     <div class="row">
 
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-7 mb-4">
 
-        <h2>Given items per bag and number of bags, calculate total number of items</h2>
+       
         <hr>
 
         <fieldset class="mt-4">
@@ -84,13 +107,15 @@
   </main>
 
   <!-- sticky footer with padding on y-axis (top and bottom) -->
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="page-footer ">
+      
     <div class="container">
       <span class="text-muted">Right-click / Inspect / Console</span>
       &#9670;
       <a href="https://suma-gitrep.github.io/js-gui/">Demo</a>
       &#9670;
       <a href="https://github.com/suma-gitrep/js-gui">Source</a>
+      <a class="footer-copyright">© 2019 Copyright:somasumadas</a>
     </div>
   </footer>
 
