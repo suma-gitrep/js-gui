@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Interactive App</title>
+  <title>Grocery Estimator</title>
 
-  <meta name="description" content="Interactive app">
-  <meta name="author" content="Denise Case">
+  <meta name="description" content="Given peoplePerCar and number of cars, display the total number of people">
+  <meta name="author" content="suma soma">
 
   <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
@@ -41,40 +41,41 @@
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-7 mb-4">
 
-        <h2>Interactive app!</h2>
+        <h2>Given items per bag and number of bags, calculate total number of items</h2>
         <hr>
 
         <fieldset class="mt-4">
           <label for="guest">Enter your name (2 to 40 characters):</label>
-          <input id="guest" type="text" minlength="2" maxlength="40" value="Lilly">
+          <input id="guest" type="text" minlength="2" maxlength="40" value="Suma Soma">
         </fieldset>
 
         <fieldset class="mt-4">
-          <label for="firstNumber">Enter first number (1 to 100):</label>
-          <input id="firstNumber" type="number" min="1" max="100" value=7>
-          <span id="firstWarning" class="text-danger"></span>
+          <label for="itemsPerBag">Enter items per bag value(1 to 100):</label>
+          <input id="itemsPerBag" type="number" min="1" max="100" value=7>
+          <span id="itemsPerBagWarning" class="text-danger"></span>
         </fieldset>
 
         <fieldset class="mt-4">
-          <label for="secondNumber">Enter second number (1 to 100):</label>
-          <input id="secondNumber" type="number" min="1" max="100" value="12">
-          <span id="secondWarning" class="text-danger"></span>
+          <label for="bags">Enter the number of bags (1 to 100):</label>
+          <input id="bags" type="number" min="1" max="100" value="12">
+          <span id="bagsWarning" class="text-danger"></span>
         </fieldset>
+       
+        <div class="mt-4">
+          <h4>Click to Calculate the total number of items</h4>
+          <hr>
+          <button id="addButton" class="btn btn-primary">Calculate</button>
+          
+          <hr>
+          <p id="result"></p>
+  
+        </div>
 
       </div>
       <!--end column 1-->
 
       <!--column 2 (5/12) -->
-      <div class="col-md-5 mb-4">
-        <h2>Try these:</h2>
-        <hr>
-        <button id="addButton" class="btn btn-primary">Add</button>
-        <button id="getJokeButton" class="btn btn-success">Get Joke</button>
-        <button id="clicker" class="btn btn-indigo">Coming soon!</button>
-        <hr>
-        <p id="result"></p>
-
-      </div>
+     
       <!-- end column 2-->
 
     </div>
